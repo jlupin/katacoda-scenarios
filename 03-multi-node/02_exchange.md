@@ -5,7 +5,7 @@ If the scripts in the previous step finished successfully, you should be able to
 or
 [exchange app - deployed on NODE_2](https://[[HOST_SUBDOMAIN]]-18000-[[KATACODA_HOST]].environments.katacoda.com/exchange/).
 
-For the purpose of this scenario we prepared both nodes with an example application consisting of several microservices. As you probably already know from the previous scenario, you can view all deployed and running microservices using webcontrol UI or the CLI.
+For the purpose of this scenario we prepared both nodes with an example application consisting of several microservices. As you probably already know from the previous scenario, you can view all deployed and running microservices using web console or the CLI.
 
 Just a quick reminder:
 - to fire up the CLI for NODE_1:
@@ -17,6 +17,6 @@ Just a quick reminder:
 - to see the list of deployed microservices and number of their instances:
   `microservice list`{{execute}}
 
-To see the node details on webcontrol UI, open any of those link in a new tab [webcontrol for NODE_1](https://[[HOST_SUBDOMAIN]]-8888-[[KATACODA_HOST]].environments.katacoda.com/webcontrol/) or [webcontrol for NODE_2](https://[[HOST_SUBDOMAIN]]-18888-[[KATACODA_HOST]].environments.katacoda.com/webcontrol/).
+To see the node details on web console, open any of those link in a new tab [web console for NODE_1](https://[[HOST_SUBDOMAIN]]-8888-[[KATACODA_HOST]].environments.katacoda.com/web console/) or [web console for NODE_2](https://[[HOST_SUBDOMAIN]]-18888-[[KATACODA_HOST]].environments.katacoda.com/web console/).
 
 You'll notice that for each node, there's one microservice that is not started, this in purpose. Your task will be not to start it (as we did in the previous scenario) but to enable communication between both nodes thus having complete functionality of the exchange application.
