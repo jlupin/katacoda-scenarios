@@ -5,21 +5,30 @@ In the previous step you learned to use the web console panel to start a microse
 ## Starting the service using CLI
 
 1. Start the control CLI:
-`/opt/jlupin/platform/start/control.sh`{{execute}}
-![CLI started](assets/cli-start.png)
+
+  `/opt/jlupin/platform/start/control.sh`{{execute}}
+
+  ![CLI started](assets/cli-start.png)
 
 2. List the microservices:
-`> microservice list`
-![Missing microservice](assets/cli-missing-service.png)
+
+  `microservice list`{{execute}}
+
+  ![Missing microservice](assets/cli-missing-service.png)
 
 3. Notice which service is not running and start it:
-`> microservice start currency-converter-eur`
+
+  `microservice start currency-converter-eur`{{execute}}
 
 4. After several seconds you'll se the confirmation in the console that the service started:
-![Service started](assets/cli-notification.png)
+
+  ![Service started](assets/cli-notification.png)
 
 5. List all microservices again:
-![Service started](assets/cli-complete-list.png)
+
+  `microservice list`{{execute}}
+
+  ![Service started](assets/cli-complete-list.png)
 
 ## Test
 

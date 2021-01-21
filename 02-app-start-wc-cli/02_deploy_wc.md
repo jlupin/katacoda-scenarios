@@ -9,19 +9,21 @@ In order to start the missing application you can either use the web console pan
 
 ## Starting the service using web console
 
-1. Open web console panel in the new tab: [web console](https://[[HOST_SUBDOMAIN]]-8888-[[KATACODA_HOST]].environments.katacoda.com/webcontrol/). Login using these credentials:
-  - username: `admin`
-  - password: `admin`
-![Service started](assets/wc-login.png)
+1. Open web console panel in the new tab: [web console](https://[[HOST_SUBDOMAIN]]-8888-[[KATACODA_HOST]].environments.katacoda.com/webcontrol/). Login using `admin` credentials which by default are: `admin/admin`.
+
+  ![Service started](assets/wc-login.png)
 
 2. Open second tab "Microservice" in the table at the bottom of the page.
-![Service started](assets/wc-table-tab.png)
+
+  ![Service started](assets/wc-table-tab.png)
 
 3. Find missing microservice and in the dropdown select action "start".
-![Service started](assets/wc-dropdown-select.png)
+
+  ![Service started](assets/wc-dropdown-select.png)
 
 4. Wait a couple of seconds, you should see a notification that jlupin finished the command. You can test the currency conversion again and see the difference: [exchange application](https://[[HOST_SUBDOMAIN]]-8000-[[KATACODA_HOST]].environments.katacoda.com/exchange/).
-![Service started](assets/wc-notification.png)
+
+  ![Service started](assets/wc-notification.png)
 
 ## Test
 
