@@ -1,0 +1,50 @@
+{
+  "title": "Introduction to JLupin Platform - multiple nodes with JPCC",
+  "description": "",
+  "icon": "assets/jlupin.png",
+  "difficulty": "Beginner",
+  "time": "60 minutes",
+  "details": {
+    "steps": [
+      {
+        "title": "JLupin setup",
+        "courseData": "scripts/background.sh",
+        "code": "scripts/foreground.sh",
+        "text": "01_setup.md"
+      },
+      {
+        "title": "JPCC user management",
+        "text": "02_jpcc_user_management.md"
+      },
+      {
+        "title": "JPCC zone management",
+        "text": "03_jpcc_zone_management.md"
+      },
+      {
+        "title": "JPCC inter-node connection",
+        "text": "04_jpcc_node_connection.md"
+      }
+    ],
+    "assets": {
+      "host01": [
+        {
+          "file": "wait.sh",
+          "target": "/usr/local/bin/",
+          "chmod": "+x"
+        }
+      ]
+    },
+    "intro": {
+      "text": "00_intro.md"
+    },
+    "finish": {
+      "text": "99_finish.md"
+    }
+  },
+  "environment": {
+    "uilayout": "terminal"
+  },
+  "backend": {
+    "imageid": "openjdk:15"
+  }
+}
