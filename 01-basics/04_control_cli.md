@@ -35,4 +35,4 @@ Starting the CLI in interactive mode:
 `/opt/jlupin/platform/start/control.sh [command]`
 
 For example:
-`/opt/jlupin/platform/start/control.sh microservice status exchange`{{execute}}
+`/opt/jlupin/platform/start/control.sh microservice status hello-world`{{execute}}
