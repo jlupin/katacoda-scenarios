@@ -1,0 +1,50 @@
+{
+  "title": "Introduction to JLupin Platform - multiple nodes",
+  "description": "",
+  "icon": "assets/jlupin.png",
+  "difficulty": "Beginner",
+  "time": "60 minutes",
+  "details": {
+    "steps": [
+      {
+        "title": "JLupin setup",
+        "courseData": "scripts/background.sh",
+        "code": "scripts/foreground.sh",
+        "text": "01_setup.md"
+      },
+      {
+        "title": "Exchange",
+        "text": "02_exchange.md"
+      },
+      {
+        "title": "Enabling communication between NODE_1 and NODE_2",
+        "text": "03_node_comms_1_to_2.md"
+      },
+      {
+        "title": "Enabling communication between NODE_2 and NODE_1",
+        "text": "04_node_comms_2_to_1.md"
+      }
+    ],
+    "assets": {
+      "host01": [
+        {
+          "file": "wait.sh",
+          "target": "/usr/local/bin/",
+          "chmod": "+x"
+        }
+      ]
+    },
+    "intro": {
+      "text": "00_intro.md"
+    },
+    "finish": {
+      "text": "99_finish.md"
+    }
+  },
+  "environment": {
+    "uilayout": "terminal"
+  },
+  "backend": {
+    "imageid": "openjdk:15"
+  }
+}
