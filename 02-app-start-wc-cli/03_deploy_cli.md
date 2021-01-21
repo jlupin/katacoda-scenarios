@@ -1,6 +1,6 @@
 # CLI
 
-In the previous step you learned to use the webcontrol panel to start a microservice deployed to jlupin node. Now you'll see an alternative, programmatic approach to the same task. Your task will be to follow the instructions and start the microservice using the terminal.
+In the previous step you learned to use the web console panel to start a microservice deployed to jlupin node. Now you'll see an alternative, programmatic approach to the same task. Your task will be to follow the instructions and start the microservice using the terminal.
 
 ## Starting the service using CLI
 
