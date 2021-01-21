@@ -1,0 +1,46 @@
+{
+  "title": "Introduction to JLupin Platform - microservice deployment",
+  "description": "",
+  "icon": "assets/jlupin.png",
+  "difficulty": "Beginner",
+  "time": "60 minutes",
+  "details": {
+    "steps": [
+      {
+        "title": "JLupin setup",
+        "courseData": "scripts/background.sh",
+        "code": "scripts/foreground.sh",
+        "text": "01_setup.md"
+      },
+      {
+        "title": "Microservice deployment using Webcontrol",
+        "text": "02_deploy_wc.md"
+      },
+      {
+        "title": "Microservice deployment using CLI",
+        "text": "03_deploy_cli.md"
+      }
+    ],
+    "assets": {
+      "host01": [
+        {
+          "file": "wait.sh",
+          "target": "/usr/local/bin/",
+          "chmod": "+x"
+        }
+      ]
+    },
+    "intro": {
+      "text": "00_intro.md"
+    },
+    "finish": {
+      "text": "99_finish.md"
+    }
+  },
+  "environment": {
+    "uilayout": "terminal"
+  },
+  "backend": {
+    "imageid": "openjdk:15"
+  }
+}
