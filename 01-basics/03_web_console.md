@@ -1,7 +1,7 @@
-# JLuping Webcontrol panel
+# JLupin Web console panel
 
-If the scripts in the first step finished successfully, you should be able to see the JLupin webcontrol application by opening the following link in the new browser tab:
-[webcontrol](https://[[HOST_SUBDOMAIN]]-8888-[[KATACODA_HOST]].environments.katacoda.com/webcontrol/).
+If the scripts in the first step finished successfully, you should be able to see the JLupin web console application by opening the following link in the new browser tab:
+[web console](https://[[HOST_SUBDOMAIN]]-8888-[[KATACODA_HOST]].environments.katacoda.com/webcontrol/).
 
 This application could be helpful to control the JLupin cluster. There's an overview of running application, user can also use it in order to pass commands to each of the microservices currently deployed on the platform.
 
@@ -9,9 +9,9 @@ This application could be helpful to control the JLupin cluster. There's an over
 
 By default, both username and password are: `admin`.
 
-## Webcontrol overview
+## Web console overview
 
-After successful login you'll see a webcontrol panel consisting of three parts: nodes overview, terminal with control CLI and table containing some more details about the cluster.
+After successful login you'll see a web console panel consisting of three parts: nodes overview, terminal with control CLI and table containing some more details about the cluster.
 
 ### Nodes overview
 
@@ -23,7 +23,7 @@ Here you can see the applications deployed and running inside the jlupin node. I
 
 ![WC terminal](assets/wc-terminal.png)
 
-This is webcontrol's equivalent but inside a terminal - here you can pass all commands to the node for controlling the microservices, checking their status or controllin the node. The CLI's introduction will be on the next page of this tutorial.
+This is web console's equivalent but inside a terminal - here you can pass all commands to the node for controlling the microservices, checking their status or controlling the node. The CLI's introduction will be on the next page of this tutorial.
 
 ### Cluster details
 
