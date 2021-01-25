@@ -10,7 +10,7 @@ Further reading on zone management and possible commands are provided [here](htt
 
   `zone list`{{execute}}
 
-  ![Zone list before creation](assets/jpcc_zone_list_prev.png)
+  ![Zone list before creation](assets/jpcc_zone_list_pre_create.png)
 
 2. Create a new zone with name `zone_a`.
 
@@ -22,12 +22,12 @@ Further reading on zone management and possible commands are provided [here](htt
 
   `zone list`{{execute}}
 
-  ![Zone list after creation](assets/jpcc_zone_list_post.png)
+  ![Zone list after creation](assets/jpcc_zone_list_pre_node_add.png)
 
 4. Change context inside the console to newly created zone.
 
   `cd ../zone_a`{{execute}}
 
-  ![Context change](assets/jpcc_context_change.png)
+  ![Context change](assets/jpcc_zone_context_change.png)
 
 On the next page, we'll continue with getting to know several commands for node management.
