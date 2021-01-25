@@ -1,3 +1,3 @@
 #!/bin/bash
 
-console 2> >(grep -Ev WARNING 1>&2)
+(console | filter.sh) 2> >(grep -Ev WARNING 1>&2)

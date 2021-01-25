@@ -18,7 +18,7 @@ For the purpose of this scenario you'll need an user with complete admin privile
 
 1. Start up the jpcc console:
 
-  `console`{{execute}}
+  `console.sh`{{execute}}
 
 2. Login to the console using `user_admin` credentials, which by default are: `user_admin/user_admin`.
 

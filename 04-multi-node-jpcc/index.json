@@ -36,6 +36,11 @@
           "file": "console.sh",
           "target": "/usr/local/bin/",
           "chmod": "+x"
+        },
+        {
+          "file": "filter.sh",
+          "target": "/usr/local/bin/",
+          "chmod": "+x"
         }
       ]
     },
