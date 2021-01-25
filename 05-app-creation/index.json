@@ -1,0 +1,62 @@
+{
+  "title": "01 - JLupin demo with example app",
+  "description": "",
+  "icon": "assets/jlupin.png",
+  "difficulty": "Beginner",
+  "time": "30 minutes",
+  "details": {
+    "steps": [
+      {
+        "title": "JLupin setup",
+        "courseData": "scripts/background.sh",
+        "code": "scripts/foreground.sh",
+        "text": "01_setup.md"
+      },
+      {
+        "title": "Writing new application",
+        "text": "02_writing_hello.md"
+      },
+      {
+        "title": "Compiling new application",
+        "text": "03_compiling_hello.md"
+      },
+      {
+        "title": "Deploying new application",
+        "text": "04_deploying_hello.md"
+      },
+      {
+        "title": "Testing new application",
+        "text": "05_testing_hello.md"
+      },
+      {
+        "title": "Altenative deployment process",
+        "text": "06_deploy_alternative.md"
+      }
+    ],
+    "assets": {
+      "host01": [
+        {
+          "file": "wait.sh",
+          "target": "/usr/local/bin/",
+          "chmod": "+x"
+        },
+        {
+          "file": "hello-jlupin.zip",
+          "target": "/root/scenario"
+        }
+      ]
+    },
+    "intro": {
+      "text": "00_intro.md"
+    },
+    "finish": {
+      "text": "99_finish.md"
+    }
+  },
+  "environment": {
+    "uilayout": "editor-terminal"
+  },
+  "backend": {
+    "imageid": "openjdk:15"
+  }
+}
