@@ -12,13 +12,13 @@ Further reading on zone management and possible commands are provided [here](htt
 
   ![Node status before connect](assets/jpcc_node_status_prev.png)
 
-2. Connect `NODE_1` to `zone_a`. In order to do that you'll need the `TRANSMISSION_PORT` of the aforemention node, which in this case is `14096`.
+2. Connect `NODE_1` to `zone_a`. In order to do that you'll need the `TRANSMISSION_PORT` of the aforemention node, which in this case is `14096`. You can always check transmission port for that node by taking a look at the configuration file of the node (quick reminder of the configuration file location: `/opt/jlupin/platform1/start/configuration/main.yml`).
 
   `node connect localhost zone_a 14096`{{execute}}
 
   ![Node connect NODE_1](assets/jpcc_node_connect_node_1.png)
 
-3. Connect `NODE_2` to `zone_a`. In order to do that you'll need the `TRANSMISSION_PORT` of the aforemention node, which in this case is `19096`.
+3. Connect `NODE_2` to `zone_a`. In order to do that you'll need the `TRANSMISSION_PORT` of the aforemention node, which in this case is `19096` (quick reminder of the configuration file location: `/opt/jlupin/platform2/start/configuration/main.yml`).
 
   `node connect localhost zone_a 19096`{{execute}}
 
