@@ -12,7 +12,7 @@ In the previous step you learned to use the web console panel to start a microse
 
 2. List the microservices:
 
-  `microservice list`{{execute}}
+  `microservice status`{{execute}}
 
   ![Missing microservice](assets/cli-missing-service.png)
 
@@ -26,7 +26,7 @@ In the previous step you learned to use the web console panel to start a microse
 
 5. List all microservices again:
 
-  `microservice list`{{execute}}
+  `microservice status`{{execute}}
 
   ![Service started](assets/cli-complete-list.png)
 
