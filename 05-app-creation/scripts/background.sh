@@ -29,6 +29,7 @@ echo "done" >> /opt/.jlupin-setup
 echo "done" >> /opt/.jlupin-started
 
 # echo "Starting example app"
+sleep 2
 /opt/jlupin/platform/start/control.sh microservice destroy currency-converter-eur
 /opt/jlupin/platform/start/control.sh microservice destroy currency-converter-gbp
 /opt/jlupin/platform/start/control.sh microservice destroy currency-converter-chf
