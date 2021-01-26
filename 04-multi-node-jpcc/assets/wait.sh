@@ -25,9 +25,6 @@ spin_until()
 
 show_progress()
 {
-  echo -n "Tweaking system settings..."
-  spin_until "/opt/.sys-setup"
-
   echo -n "Installing system dependencies..."
   spin_until "/opt/.sys-deps-installed"
 

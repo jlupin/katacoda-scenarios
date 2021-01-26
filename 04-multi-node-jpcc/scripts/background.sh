@@ -1,22 +1,5 @@
 #!/bin/bash
 
-# echo "Changing ulimits"
-sed -i -e '$aroot            soft    nofile          64500' /etc/security/limits.conf
-sed -i -e '$aroot            hard    nofile          64500' /etc/security/limits.conf
-sed -i -e '$aroot            soft    nproc           32768' /etc/security/limits.conf
-sed -i -e '$aroot            hard    nproc           32768' /etc/security/limits.conf
-sysctl -p /etc/security/limits.conf
-
-sed -i 's/#DefaultLimitNOFILE=/DefaultLimitNOFILE=64500/' /etc/systemd/system.conf
-sed -i 's/#DefaultLimitNPROC=/DefaultLimitNPROC=32768/' /etc/systemd/system.conf
-
-sed -i -e 'session required pam_limits.so' /etc/pam.d/common-session
-sed -i -e 'session required pam_limits.so' /etc/pam.d/common-session-noninteractive
-ulimit -n 64500
-ulimit -u 32768
-
-echo "done" >> /opt/.sys-setup
-
 # echo "Installing system dependencies"
 apt update
 apt install -y curl unzip htop
@@ -24,6 +7,7 @@ echo "done" >> /opt/.sys-deps-installed
 
 # echo "Downloading jlupin@1.6.1"
 curl https://kacdab-download.s3.eu-central-1.amazonaws.com/jlupin_platform_version_1_6_1_0_webcontrol_upgrade.zip -o jlupin.zip
+curl https://kacdab-download.s3.eu-central-1.amazonaws.com/exchange-1.6.1.0.zip -o exchange.zip
 echo "done" >> /opt/.jlupin-downloaded
 
 # echo "Downloading jpcc-core@1.6.1"
@@ -76,13 +60,15 @@ sed -i 's/^  server_name edge8001;/  server_name edge13001;/' /opt/jlupin/platfo
 sed -i 's/^  transmissionPort:  9096/  transmissionPort: 14096/' /opt/jlupin/platform1/start/control/configuration/control.yml
 sed -i 's/^  transmissionPort:  9096/  transmissionPort: 14096/' /opt/jlupin/platform1/application/webcontrol/control.yml
 
-sed -i "s/^  externalPort: '8000'/  externalPort: '13000'/" /opt/jlupin/platform1/application/exchange/servlet_configuration.yml
 sed -i "s/^  externalPort: '8888'/  externalPort: '13888'/" /opt/jlupin/platform1/application/webcontrol/servlet_configuration.yml
 
 sed -i 's/^  isStartOnMainServerInitialize: true/  isStartOnMainServerInitialize: false/' /opt/jlupin/platform1/application/currency-converter-eur/configuration.yml
 
 rm -rf /opt/jlupin/platform1/application/channelMicroservice
 rm -rf /opt/jlupin/platform1/application/queueMicroservice
+rm -rf /opt/jlupin/platform1/application/exchange
+unzip exchange.zip -d /opt/jlupin/platform1/application
+sed -i "s/^  externalPort: '8000'/  externalPort: '13000'/" /opt/jlupin/platform1/application/exchange/servlet_configuration.yml
 
 echo "done" >> /opt/.jlupin1-setup
 
@@ -131,13 +117,15 @@ sed -i 's/^  server_name edge8001;/  server_name edge18001;/' /opt/jlupin/platfo
 sed -i 's/^  transmissionPort:  9096/  transmissionPort: 19096/' /opt/jlupin/platform2/start/control/configuration/control.yml
 sed -i 's/^  transmissionPort:  9096/  transmissionPort: 19096/' /opt/jlupin/platform2/application/webcontrol/control.yml
 
-sed -i "s/^  externalPort: '8000'/  externalPort: '18000'/" /opt/jlupin/platform2/application/exchange/servlet_configuration.yml
 sed -i "s/^  externalPort: '8888'/  externalPort: '18888'/" /opt/jlupin/platform2/application/webcontrol/servlet_configuration.yml
 
 sed -i 's/^  isStartOnMainServerInitialize: true/  isStartOnMainServerInitialize: false/' /opt/jlupin/platform2/application/currency-converter-gbp/configuration.yml
 
 rm -rf /opt/jlupin/platform2/application/channelMicroservice
 rm -rf /opt/jlupin/platform2/application/queueMicroservice
+rm -rf /opt/jlupin/platform2/application/exchange
+unzip exchange.zip -d /opt/jlupin/platform2/application
+sed -i "s/^  externalPort: '8000'/  externalPort: '18000'/" /opt/jlupin/platform2/application/exchange/servlet_configuration.yml
 
 echo "done" >> /opt/.jlupin2-setup
 
