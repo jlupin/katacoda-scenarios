@@ -49,13 +49,13 @@ show_progress()
   echo -n "Starting jlupin platform on NODE_1..."
   spin_until "/opt/.jlupin1-started"
 
-  echo -n "Waiting for example app to be available on NODE_1..."
+  echo -n "Waiting for exchange app to be available on NODE_1 (starting multiple microservices). This can take a while (up to 3 minutes).."
   spin_until "/opt/.exchange1-available"
 
   echo -n "Starting jlupin platform on NODE_2..."
   spin_until "/opt/.jlupin2-started"
 
-  echo -n "Waiting for example app to be available on NODE_2..."
+  echo -n "Waiting for exchange app to be available on NODE_2 (starting multiple microservices). This can take a while (up to 3 minutes).."
   spin_until "/opt/.exchange2-available"
 
   echo -n "Preparing JLupin Platform Control Center - Core..."

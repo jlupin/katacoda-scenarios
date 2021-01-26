@@ -37,7 +37,7 @@ show_progress()
   echo -n "Starting jlupin platform..."
   spin_until "/opt/.jlupin-started"
 
-  echo -n "Waiting for example app to be available..."
+  echo -n "Waiting for exchange app to be available (starting multiple microservices). This can take a while (up to 3 minutes).."
   spin_until "/opt/.exchange-available"
 }
 
