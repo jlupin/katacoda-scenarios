@@ -69,7 +69,6 @@ sed -i 's/^  server_name edge8001;/  server_name edge18001;/' /opt/jlupin/platfo
 sed -i 's/^  transmissionPort:  9096/  transmissionPort: 19096/' /opt/jlupin/platform2/start/control/configuration/control.yml
 sed -i 's/^  transmissionPort:  9096/  transmissionPort: 19096/' /opt/jlupin/platform2/application/webcontrol/control.yml
 
-sed -i "s/^  externalPort: '8000'/  externalPort: '18000'/" /opt/jlupin/platform2/application/exchange/servlet_configuration.yml
 sed -i "s/^  externalPort: '8888'/  externalPort: '18888'/" /opt/jlupin/platform2/application/webcontrol/servlet_configuration.yml
 
 sed -i 's/^  isStartOnMainServerInitialize: true/  isStartOnMainServerInitialize: false/' /opt/jlupin/platform2/application/currency-converter-gbp/configuration.yml
@@ -78,7 +77,7 @@ rm -rf /opt/jlupin/platform2/application/channelMicroservice
 rm -rf /opt/jlupin/platform2/application/queueMicroservice
 rm -rf /opt/jlupin/platform2/application/exchange
 unzip exchange.zip -d /opt/jlupin/platform2/application
-
+sed -i "s/^  externalPort: '8000'/  externalPort: '18000'/" /opt/jlupin/platform2/application/exchange/servlet_configuration.yml
 echo "done" >> /opt/.jlupin2-setup
 
 # echo "Starting JLupin 1"
