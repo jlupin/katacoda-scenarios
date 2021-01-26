@@ -15,7 +15,7 @@ chmod 750 /opt/jlupin/platform/start/start.sh
 chmod 750 /opt/jlupin/platform/start/control.sh
 sed -i '1iuser root root;' /opt/jlupin/platform/start/configuration/edge.conf
 sed -i '/ssl/ s/^#*/#/g' /opt/jlupin/platform/technical/nginx/linux/conf/servers/admin.conf
-# sed -i 's/  isStartOnMainServerInitialize: true/  isStartOnMainServerInitialize: false/' /opt/jlupin/platform/application/currency-converter-eur/configuration.yml
+sed -i 's/^  isStartOnMainServerInitialize: true/  isStartOnMainServerInitialize: false/' /opt/jlupin/platform/application/currency-converter-eur/configuration.yml
 echo "done" >> /opt/.jlupin-setup
 
 # echo "Starting JLupin platform"
@@ -29,8 +29,6 @@ do
   sleep 5
   status=$(curl -w "%{http_code}\\n" -H 'Accept: application/json' -H 'Content-Type: application/json' -H 'Connection: keep-alive' --data-raw $'{\n  "value": "12",\n  "currency": "USD"\n}' http://localhost:8000/exchange/convert -s -o /dev/null)
 done
-
-/opt/jlupin/platform/start/control.sh microservice stop currency-converter-eur
 
 # echo "Finished"
 echo "done" >> /opt/.exchange-available
