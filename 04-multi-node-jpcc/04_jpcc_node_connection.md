@@ -34,7 +34,7 @@ Further reading on zone management and possible commands are provided [here](htt
 
 As you can probably recall from the previous scenario, you already learned how to enable communication in both directions between `NODE_1` and `NODE_2`. You'll achieve the same result but this time using `JPCC` instead of the `control CLI`.
 
-But before we start connecting the nodes, you can confirm on your own that there's exchange application working on each node, with one microservice missing: [exchange app - deployed on NODE_1](https://[[HOST_SUBDOMAIN]]-8000-[[KATACODA_HOST]].environments.katacoda.com/exchange/) or [exchange app - deployed on NODE_2](https://[[HOST_SUBDOMAIN]]-18000-[[KATACODA_HOST]].environments.katacoda.com/exchange/).
+But before we start connecting the nodes, you can confirm on your own that there's exchange application working on each node, with one microservice missing: [exchange app - deployed on NODE_1](https://[[HOST_SUBDOMAIN]]-13000-[[KATACODA_HOST]].environments.katacoda.com/exchange/) or [exchange app - deployed on NODE_2](https://[[HOST_SUBDOMAIN]]-18000-[[KATACODA_HOST]].environments.katacoda.com/exchange/).
 
 1. You should still be logged in to the console as the `admin` user and your context should be directed at the new zone you created in the previous step: `zone_a`. First list peers of all the nodes that are connected to the zone `zone_a`.
 
