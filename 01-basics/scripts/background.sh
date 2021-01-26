@@ -19,13 +19,13 @@ chmod 750 /opt/jlupin/platform/start/start.sh
 chmod 750 /opt/jlupin/platform/start/control.sh
 sed -i '1iuser root root;' /opt/jlupin/platform/start/configuration/edge.conf
 sed -i '/ssl/ s/^#*/#/g' /opt/jlupin/platform/technical/nginx/linux/conf/servers/admin.conf
-sed -i 's/  isStartOnMainServerInitialize: true/  isStartOnMainServerInitialize: false/' /opt/jlupin/platform/application/currency-converter-eur/configuration.yml
-sed -i 's/  isStartOnMainServerInitialize: true/  isStartOnMainServerInitialize: false/' /opt/jlupin/platform/application/currency-converter-gbp/configuration.yml
-sed -i 's/  isStartOnMainServerInitialize: true/  isStartOnMainServerInitialize: false/' /opt/jlupin/platform/application/currency-converter-chf/configuration.yml
-sed -i 's/  isStartOnMainServerInitialize: true/  isStartOnMainServerInitialize: false/' /opt/jlupin/platform/application/exchange-rates/configuration.yml
-sed -i 's/  isStartOnMainServerInitialize: true/  isStartOnMainServerInitialize: false/' /opt/jlupin/platform/application/exchange/servlet_configuration.yml
-sed -i 's/  isStartOnMainServerInitialize: true/  isStartOnMainServerInitialize: false/' /opt/jlupin/platform/application/channelMicroservice/configuration.yml
-sed -i 's/  isStartOnMainServerInitialize: true/  isStartOnMainServerInitialize: false/' /opt/jlupin/platform/application/queueMicroservice/configuration.yml
+rm -rf /opt/jlupin/platform/application/channelMicroservice
+rm -rf /opt/jlupin/platform/application/queueMicroservice
+rm -rf /opt/jlupin/platform/application/currency-converter-eur
+rm -rf /opt/jlupin/platform/application/currency-converter-gbp
+rm -rf /opt/jlupin/platform/application/currency-converter-chf
+rm -rf /opt/jlupin/platform/application/exchange-rates
+rm -rf /opt/jlupin/platform/application/exchange
 echo "done" >> /opt/.jlupin-setup
 
 # echo "Starting JLupin platform"
@@ -36,13 +36,6 @@ echo "done" >> /opt/.jlupin-started
 unzip hello-app.zip -d /opt/jlupin/platform/application
 /opt/jlupin/platform/start/control.sh microservice start hello-world
 sleep 1
-/opt/jlupin/platform/start/control.sh microservice destroy currency-converter-eur
-/opt/jlupin/platform/start/control.sh microservice destroy currency-converter-gbp
-/opt/jlupin/platform/start/control.sh microservice destroy currency-converter-chf
-/opt/jlupin/platform/start/control.sh microservice destroy exchange-rates
-/opt/jlupin/platform/start/control.sh microservice destroy exchange
-/opt/jlupin/platform/start/control.sh microservice destroy channelMicroservice
-/opt/jlupin/platform/start/control.sh microservice destroy queueMicroservice
 
 status=$(curl -w "%{http_code}\\n" -H 'Connection: keep-alive' http://localhost:8000/hello-world/greeting?name=test -s -o /dev/null)
 

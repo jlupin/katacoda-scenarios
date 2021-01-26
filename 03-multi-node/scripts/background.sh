@@ -19,6 +19,8 @@ chmod 750 /opt/jlupin/platform1/start/control.sh
 sed -i '1iuser root root;' /opt/jlupin/platform1/start/configuration/edge.conf
 sed -i '/ssl/ s/^#*/#/g' /opt/jlupin/platform1/technical/nginx/linux/conf/servers/admin.conf
 sed -i 's/^  isStartOnMainServerInitialize: true/  isStartOnMainServerInitialize: false/' /opt/jlupin/platform1/application/currency-converter-eur/configuration.yml
+rm -rf /opt/jlupin/platform1/application/channelMicroservice
+rm -rf /opt/jlupin/platform1/application/queueMicroservice
 echo "done" >> /opt/.jlupin1-setup
 
 mkdir -p /opt/jlupin/platform2
@@ -68,6 +70,9 @@ sed -i "s/^  externalPort: '8000'/  externalPort: '18000'/" /opt/jlupin/platform
 sed -i "s/^  externalPort: '8888'/  externalPort: '18888'/" /opt/jlupin/platform2/application/webcontrol/servlet_configuration.yml
 
 sed -i 's/^  isStartOnMainServerInitialize: true/  isStartOnMainServerInitialize: false/' /opt/jlupin/platform2/application/currency-converter-gbp/configuration.yml
+
+rm -rf /opt/jlupin/platform2/application/channelMicroservice
+rm -rf /opt/jlupin/platform2/application/queueMicroservice
 
 echo "done" >> /opt/.jlupin2-setup
 

@@ -37,9 +37,6 @@ show_progress()
   echo -n "Starting jlupin platform..."
   spin_until "/opt/.jlupin-started"
 
-  echo -n "Modifying jlupin platform..."
-  spin_until "/opt/.jlupin-prepared"
-
   echo -n "Preparing project structure..."
   spin_until "/opt/.project-prepared"
 }
