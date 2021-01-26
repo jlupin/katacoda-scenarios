@@ -17,6 +17,6 @@ Just a quick reminder:
 - to see the list of deployed microservices and number of their instances:
   `microservice list`{{execute}}
 
-To see the node details on web console, open any of those link in a new tab [web console for NODE_1](https://[[HOST_SUBDOMAIN]]-8888-[[KATACODA_HOST]].environments.katacoda.com/web console/) or [web console for NODE_2](https://[[HOST_SUBDOMAIN]]-18888-[[KATACODA_HOST]].environments.katacoda.com/web console/).
+To see the node details on web console, open any of those link in a new tab [web console for NODE_1](https://[[HOST_SUBDOMAIN]]-8888-[[KATACODA_HOST]].environments.katacoda.com/webcontrol/) or [web console for NODE_2](https://[[HOST_SUBDOMAIN]]-18888-[[KATACODA_HOST]].environments.katacoda.com/webcontrol/).
 
 You'll notice that for each node, there's one microservice that is not started, this in purpose. Your task will be not to start it (as we did in the previous scenario) but to enable communication between both nodes thus having complete functionality of the exchange application.
