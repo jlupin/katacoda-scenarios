@@ -7,6 +7,7 @@ echo "done" >> /opt/.sys-deps-installed
 
 # echo "Downloading jlupin@1.6.1"
 curl https://kacdab-download.s3.eu-central-1.amazonaws.com/platform2.tar.gz -o jlupin.tgz
+curl https://kacdab-download.s3.eu-central-1.amazonaws.com/exchange-1.6.1.0.zip -o exchange.zip
 echo "done" >> /opt/.jlupin-downloaded
 
 # echo "Preparing JLupin"
@@ -21,6 +22,8 @@ sed -i '/ssl/ s/^#*/#/g' /opt/jlupin/platform1/technical/nginx/linux/conf/server
 sed -i 's/^  isStartOnMainServerInitialize: true/  isStartOnMainServerInitialize: false/' /opt/jlupin/platform1/application/currency-converter-eur/configuration.yml
 rm -rf /opt/jlupin/platform1/application/channelMicroservice
 rm -rf /opt/jlupin/platform1/application/queueMicroservice
+rm -rf /opt/jlupin/platform1/application/exchange
+unzip exchange.zip -d /opt/jlupin/platform1/application
 echo "done" >> /opt/.jlupin1-setup
 
 mkdir -p /opt/jlupin/platform2
@@ -73,6 +76,8 @@ sed -i 's/^  isStartOnMainServerInitialize: true/  isStartOnMainServerInitialize
 
 rm -rf /opt/jlupin/platform2/application/channelMicroservice
 rm -rf /opt/jlupin/platform2/application/queueMicroservice
+rm -rf /opt/jlupin/platform2/application/exchange
+unzip exchange.zip -d /opt/jlupin/platform2/application
 
 echo "done" >> /opt/.jlupin2-setup
 
