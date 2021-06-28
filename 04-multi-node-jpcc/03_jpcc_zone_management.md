@@ -2,7 +2,7 @@
 
 Zone is one of the primary units in the jlupin platform. They are logical group of nodes. In most configurations all nodes in same zone have access to each other. Node can be connected only to one zone.
 
-Further reading on zone management and possible commands are provided [here](https://jlupin.io/documentation/jlupin-platform-control-center-161/page/commands-zone.html).
+Further reading on zone management and possible commands are provided [here](https://jlupin.io/documentation/jlupin-platform-control-center-161/commands/zone/).
 
 ## New zone creation
 

@@ -10,7 +10,7 @@ There are two users defined by default:
 - `user_admin` with role `USER_ADMIN`
 - `jmx_extractor` with role `JMX_EXTRACTOR`
 
-Further reading on user roles and possible permissions changes are provided [here](https://jlupin.io/documentation/jlupin-platform-control-center-161/page/users-roles.html).
+Further reading on user roles and possible permissions changes are provided [here](https://jlupin.io/documentation/jlupin-platform-control-center-161/users/roles/).
 
 ### Admin user creation
 

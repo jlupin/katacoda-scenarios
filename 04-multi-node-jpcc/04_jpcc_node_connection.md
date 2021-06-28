@@ -2,7 +2,7 @@
 
 Node is one of the primary units in the jlupin platform. They are primary physical units of your environment. They are giving compute spaces for your microservices. You connect them to Control Center to let it know about your environment.
 
-Further reading on zone management and possible commands are provided [here](https://jlupin.io/documentation/jlupin-platform-control-center-161/page/commands-node.html).
+Further reading on zone management and possible commands are provided [here](https://jlupin.io/documentation/jlupin-platform-control-center-161/commands/node/).
 
 ## Connecting nodes to the zone
 

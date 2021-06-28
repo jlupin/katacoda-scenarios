@@ -2,7 +2,7 @@
 
 JLupin Platform supports creating web application with use of servlet containers. For this Spring Boot is used. Application created this way is also a microservice but with exposed full http API.
 
-For the purpose of this scenario and simplicity, there's already everything configured on the server, including required project's structure. Full description of the recommended structure is available [here](https://jlupin.io/documentation/continuous-delivery-maven-plugin-161/page/recommended_structure-overview.html).
+For the purpose of this scenario and simplicity, there's already everything configured on the server, including required project's structure. Full description of the recommended structure is available [here](https://jlupin.io/documentation/continuous-delivery-maven-plugin-161/recommended_structure/overview/).
 
 ## Creating and opening a new file in Katacoda
 
@@ -36,7 +36,7 @@ Create following files in proper locations that are described on top of every fi
 
 ### /root/scenario/project/hello-jlupin/additional-files/servlet_configuration.yml
 
-This is the default servlet configuration without any changes to default values. Full description and meaning of each field is available [here](https://jlupin.io/documentation/jlupin-platform-161/page/architecture-microservice-servlet_configuration_yml.html)
+This is the default servlet configuration without any changes to default values. Full description and meaning of each field is available [here](https://jlupin.io/documentation/jlupin-platform-161/architecture/microservice/servlet_configuration_yml/)
 
 <pre class="file" data-filename="/root/scenario/project/hello-jlupin/additional-files/servlet_configuration.yml" data-target="replace">
 SERVERS:
