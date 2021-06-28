@@ -15,7 +15,7 @@ Today you had the chance to:
 - JLupin platform documentation: [click!](https://jlupin.io/documentation/jlupin-platform-161)
 - JLupin CLI documentation: [click!](https://jlupin.io/documentation/jlupin-cli-console-161)
 - JLupin web console documentation: [click!](https://jlupin.io/documentation/jlupin-web-console-161)
-- JLupin platform admin guide for multi nodes deployment: [click!](https://jlupin.io/documentation/jlupin-platform-161/page/admin-deployment_plans-single_node.html)
+- JLupin platform admin guide for multi nodes deployment: [click!](https://jlupin.io/documentation/jlupin-platform-161/admin/deployment_plans/single_node/)
 
 ## Feedback
 

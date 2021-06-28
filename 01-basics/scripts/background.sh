@@ -5,11 +5,11 @@ apt update && apt install -y curl unzip htop
 echo "done" >> /opt/.sys-deps-installed
 
 # echo "Downloading jlupin@1.6.1"
-curl https://kacdab-download.s3.eu-central-1.amazonaws.com/platform2.tar.gz -o jlupin.tgz
+curl https://jlupin-files.s3.eu-central-1.amazonaws.com/platform2.tar.gz -o jlupin.tgz
 echo "done" >> /opt/.jlupin-downloaded
 
 # echo "Downloading hello-world"
-curl https://kacdab-download.s3.eu-central-1.amazonaws.com/hello-world.zip -o hello-app.zip
+curl https://jlupin-files.s3.eu-central-1.amazonaws.com/hello-world.zip -o hello-app.zip
 echo "done" >> /opt/.app-downloaded
 
 # echo "Preparing JLupin"

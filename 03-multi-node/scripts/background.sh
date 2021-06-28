@@ -6,8 +6,8 @@ apt install -y curl htop
 echo "done" >> /opt/.sys-deps-installed
 
 # echo "Downloading jlupin@1.6.1"
-curl https://kacdab-download.s3.eu-central-1.amazonaws.com/platform2.tar.gz -o jlupin.tgz
-curl https://kacdab-download.s3.eu-central-1.amazonaws.com/exchange-1.6.1.0.zip -o exchange.zip
+curl https://jlupin-files.s3.eu-central-1.amazonaws.com/platform2.tar.gz -o jlupin.tgz
+curl https://jlupin-files.s3.eu-central-1.amazonaws.com/exchange-1.6.1.0.zip -o exchange.zip
 echo "done" >> /opt/.jlupin-downloaded
 
 # echo "Preparing JLupin"

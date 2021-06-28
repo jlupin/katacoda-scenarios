@@ -13,7 +13,7 @@ Today you had the chance to:
 - JLupin main web page: [click!](https://jlupin.io/)
 - JLupin platform documentation: [click!](https://jlupin.io/documentation/jlupin-platform-161)
 - JLupin Maven plugin: [click!](https://jlupin.io/documentation/continuous-delivery-maven-plugin-161)
-- Further instructions for writing custom servlet microservice: [click!](https://jlupin.io/documentation/jlupin-platform-161/page/developer-servlet_microservice-overview.html)
+- Further instructions for writing custom servlet microservice: [click!](https://jlupin.io/documentation/jlupin-platform-161/developer/servlet_microservice/overview/)
 
 ## Feedback
 

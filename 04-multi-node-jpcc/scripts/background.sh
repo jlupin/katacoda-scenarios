@@ -6,16 +6,16 @@ apt install -y curl unzip htop
 echo "done" >> /opt/.sys-deps-installed
 
 # echo "Downloading jlupin@1.6.1"
-curl https://kacdab-download.s3.eu-central-1.amazonaws.com/jlupin_platform_version_1_6_1_0_webcontrol_upgrade.zip -o jlupin.zip
-curl https://kacdab-download.s3.eu-central-1.amazonaws.com/exchange-1.6.1.0.zip -o exchange.zip
+curl https://jlupin-files.s3.eu-central-1.amazonaws.com/jlupin_platform_version_1_6_1_0_webcontrol_upgrade.zip -o jlupin.zip
+curl https://jlupin-files.s3.eu-central-1.amazonaws.com/exchange-1.6.1.0.zip -o exchange.zip
 echo "done" >> /opt/.jlupin-downloaded
 
 # echo "Downloading jpcc-core@1.6.1"
-curl https://kacdab-download.s3.eu-central-1.amazonaws.com/jlupin_platform_control_center_1_6_3_0_beta.zip -o jpcc-core.zip
+curl https://jlupin-files.s3.eu-central-1.amazonaws.com/jlupin_platform_control_center_1_6_3_0_beta.zip -o jpcc-core.zip
 echo "done" >> /opt/.jpcc-core-downloaded
 
 # echo "Downloading jpcc-client@1.6.1"
-curl https://kacdab-download.s3.eu-central-1.amazonaws.com/jlupin_platform_control_center_client_1_6_3_0_beta.zip -o jpcc-client.zip
+curl https://jlupin-files.s3.eu-central-1.amazonaws.com/jlupin_platform_control_center_client_1_6_3_0_beta.zip -o jpcc-client.zip
 echo "done" >> /opt/.jpcc-client-downloaded
 
 # echo "Preparing JLupin 1"

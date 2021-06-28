@@ -4,7 +4,7 @@ As a result from the previous step, we should have a compilable and deployable p
 
 First one, the simpler one, consists only of a single step. All you need to do, is use the previous `package` command from our maven plugin with additional parameter, which tells maven to deploy the archive to jlupin's node on localhost.
 
-Naturally it's possible to deploy to a remote location as well, you can find more information on that [here](https://jlupin.io/documentation/continuous-delivery-maven-plugin-161/page/commands-deploy.html).
+Naturally it's possible to deploy to a remote location as well, you can find more information on that [here](https://jlupin.io/documentation/continuous-delivery-maven-plugin-161/commands/deploy/).
 
 In order to deploy the app, run the command:
 

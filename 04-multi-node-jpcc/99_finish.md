@@ -13,7 +13,7 @@ Today you had the chance to:
 
 - JLupin main web page: [click!](https://jlupin.io/)
 - JLupin platform documentation: [click!](https://jlupin.io/documentation/jlupin-platform-161)
-- JLupin plaform control center documentation: [click!](https://jlupin.io/documentation/jlupin-platform-control-center-161/page/getting_started.html)
+- JLupin plaform control center documentation: [click!](https://jlupin.io/documentation/jlupin-platform-control-center-161/getting_started/)
 
 ## Feedback
 

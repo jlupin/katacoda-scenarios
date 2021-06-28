@@ -8,7 +8,7 @@ The basic usage of the `package` command is like following:
 
 `mvn package`{{execute}}
 
-More on that command can be read [here](https://jlupin.io/documentation/continuous-delivery-maven-plugin-161/page/usage-create_fat_jar.html).
+More on that command can be read [here](https://jlupin.io/documentation/continuous-delivery-maven-plugin-161/usage/create_fat_jar/).
 
 If every required file was created correctly, you should see in the terminal that the process exited with success:
 
